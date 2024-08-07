@@ -8,8 +8,6 @@ import com.anonfedora.blogapispring.model.User;
 public interface UserService {
     User registerUser(User user);
 
-    User login(User user);
-
     Optional<User> findUserByEmail(String email);
 
     Optional<User> findUserByUsername(String username);
